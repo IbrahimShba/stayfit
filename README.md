@@ -1,16 +1,129 @@
-# React + Vite
+# StayFit 💪
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**StayFit** is a simple wellness tracker website. Every day you can write down how much water you drank, what you ate, how long you exercised and how many hours you slept. The app adds everything up for you and shows it in easy charts.
 
-Currently, two official plugins are available:
+- **Live website:** https://stayfit-ib.vercel.app/
+- **GitHub repository:** https://github.com/IbrahimShba/stayfit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Course:** CSCI426 Advanced Web Programming, Section C, Fall 2026
+**Project:** Phase 1 (theme: HealthTrack, a fitness and wellness tracking website)
+**Author:** Ibrahim Shbaklo (University ID: 12231733)
+**Group statement:** I worked alone on this project. All the work was done by me.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Description
 
-## Expanding the Oxlint configuration
+Many people want to eat better, move more and sleep well, but they forget what they did during the week. StayFit solves this: you pick a day, add your water, meals, workouts and sleep, and the app shows your totals and two 7-day charts.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+There is no server and no login. All data is saved in the user's own browser (localStorage), so it stays after a page refresh.
+
+## Features
+
+- Log water (glasses), meals (with calories), workouts (with minutes) and sleep (hours) for any day
+- Home page with today's numbers and two 7-day bar charts (calories and workout minutes)
+- Features page with a list of all the days you logged
+- About and Contact pages
+- Responsive design: works on desktop and on mobile (with a mobile menu button)
+- Data saved in the browser with localStorage
+
+## Pages
+
+| Page | Link | Description |
+|------|------|-------------|
+| Home | `/` | Hero section, today's stats and 7-day charts |
+| Features | `/features` | The four things you can track and the list of logged days |
+| About | `/about` | What the app is, how it works and who made it |
+| Contact | `/contact` | Contact form (shows a thank-you message, no server) |
+| Day Log (dynamic page) | `/log/:date` | Add or edit one day, for example `/log/2026-11-17` |
+
+The **Day Log** page is the dynamic page: it reads the date from the link with `useParams` and shows that day's data.
+
+## Technologies and Libraries Used
+
+- [React](https://react.dev/) (built with [Vite](https://vite.dev/)): the main library for the user interface
+- [React Router](https://reactrouter.com/): moves between pages without reloading and reads the date from the link
+- [Bootstrap](https://getbootstrap.com/): responsive grid, navbar, cards and buttons
+- [Recharts](https://recharts.org/): the bar charts
+- localStorage (built into the browser): saves the data
+- Git and GitHub: version control
+- Vercel: hosting
+
+The design (colors, hero section, cards) was written by me in `src/index.css`. No pre-built website template was used. The libraries above are cited as required.
+
+## Setup Instructions
+
+You need [Node.js](https://nodejs.org/) installed.
+
+1. Download or clone the project:
+   ```
+   git clone https://github.com/IbrahimShba/stayfit.git
+   ```
+2. Go into the project folder:
+   ```
+   cd stayfit
+   ```
+3. Install the packages:
+   ```
+   npm install
+   ```
+4. Start the app:
+   ```
+   npm run dev
+   ```
+5. Open the link shown in the terminal (usually http://localhost:5173).
+
+To make a production build, run `npm run build`.
+
+## Project Structure
+
+```
+stayfit/
+├── index.html            the single HTML page
+├── vercel.json           makes page links work after refresh on Vercel
+├── screenshots/          the images used in this README
+└── src/
+    ├── main.jsx          starting file: loads React, Bootstrap and the router
+    ├── App.jsx           keeps all the data (logs), saves it, and shows the right page
+    ├── utils.js          small helper functions (dates and totals)
+    ├── index.css         colors and custom styles
+    ├── components/
+    │   ├── Navbar.jsx    top menu bar
+    │   └── Footer.jsx    bottom bar
+    └── pages/
+        ├── Home.jsx
+        ├── Features.jsx
+        ├── About.jsx
+        ├── Contact.jsx
+        └── DayLog.jsx    the dynamic page
+```
+
+## Screenshots
+
+### Home (desktop)
+![Home page](screenshots/home.png)
+
+### Features
+![Features page](screenshots/features.png)
+
+### Day Log (dynamic page)
+![Day Log page](screenshots/daylog.png)
+
+### About
+![About page](screenshots/about.png)
+
+### Contact
+![Contact page](screenshots/contact.png)
+
+### Mobile view
+![Mobile view](screenshots/mobile.png)
+
+## Version Control
+
+The project was built step by step with Git. The commit history on GitHub shows each stage: project setup, styles and helpers, navbar and footer, the pages, and the dynamic day log page.
+
+## Credits
+
+- React, React Router, Bootstrap and Recharts are open-source libraries (links above).
+- Font: Nunito from Google Fonts.
+- All the code, design and text of StayFit were written by Ibrahim Shbaklo.
