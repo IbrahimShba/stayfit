@@ -31,9 +31,12 @@ function App() {
   }
 
   return (
-    <>
+    // d-flex flex-column min-vh-100 = the page is at least as tall as the screen,
+    // so the footer is pushed to the bottom even on short pages
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <main className="container py-4">
+      {/* flex-grow-1 = the main part takes all the free space */}
+      <main className="container py-4 flex-grow-1">
         <Routes>
           <Route path="/" element={<Home logs={logs} />} />
           <Route path="/about" element={<About />} />
@@ -44,7 +47,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
