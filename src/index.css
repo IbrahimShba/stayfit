@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
+/* Our 4 main colors. We reuse them everywhere. */
+:root {
+  --ink: #12303a;
+  --teal: #0e7c86;
+  --teal-dark: #095a62;
+  --mint: #e3f4f1;
+  --sun: #f2b134;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--ink);
+  background: #f4faf9;
+}
+
+h1, h2, h3 { font-weight: 800; }
+
+/* Top menu bar (stays at the top when scrolling) */
+.brand-nav { background: var(--ink); position: sticky; top: 0; z-index: 10; }
+.brand-nav .nav-link { color: #cfe6e4; font-weight: 600; }
+.brand-nav .nav-link:hover { color: #fff; }
+.brand-nav .nav-link.active { color: #fff; border-bottom: 3px solid var(--sun); }
+
+/* Big green box at the top of Home */
+.hero {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 4rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(14, 124, 134, 0.25);
+}
+.hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); }
+
+/* All cards: white, rounded, soft shadow */
+.card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(18, 48, 58, 0.08);
+}
+
+/* Colored stat cards: small lift when the mouse is over them */
+.stat-card { background: var(--mint); transition: transform 0.2s; }
+.stat-card:hover { transform: translateY(-4px); }
+.stat-card .icon { font-size: 1.8rem; }
+.stat-card .number { font-size: 2rem; font-weight: 800; color: var(--teal); }
+
+/* Round buttons, yellow main button */
+.btn { border-radius: 50rem; }
+.btn-brand { background: var(--sun); color: var(--ink); font-weight: 800; border: 0; }
+.btn-brand:hover { background: #e0a020; color: var(--ink); }
+
+.list-group-item { border-color: #e3efed; }
+
+footer { background: var(--ink); color: #cfe6e4; }
