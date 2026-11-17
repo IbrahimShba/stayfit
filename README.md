@@ -6,7 +6,7 @@
 - **GitHub repository:** https://github.com/IbrahimShba/stayfit
 
 **Built for:** CSCI426 Advanced Web Programming, Section C, Fall 2026 (Project Phase 1, theme: HealthTrack, a fitness and wellness tracking website)
-**Group statement:** I worked alone on this project. All the work was done by me.
+**Group statement:** I worked alone on this project (no group).
 
 ---
 
@@ -47,7 +47,7 @@ The **Day Log** page is the dynamic page: it reads the date from the link with `
 - Git and GitHub: version control
 - Vercel: hosting
 
-The design (colors, hero section, cards) was written by me in `src/index.css`. No pre-built website template was used. The libraries above are cited as required.
+The design styles (colors, hero section, cards) are in `src/index.css`. No pre-built website template was used. The libraries above are cited as required.
 
 ## Setup Instructions
 
@@ -124,7 +124,6 @@ The project was built step by step with Git. The commit history on GitHub shows 
 
 - React, React Router, Bootstrap and Recharts are open-source libraries (links above).
 - Font: Nunito from Google Fonts.
-- All the code, design and text of StayFit were written by Ibrahim Shbaklo.
 
 ---
 
