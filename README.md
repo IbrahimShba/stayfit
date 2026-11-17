@@ -5,9 +5,7 @@
 - **Live website:** https://stayfit-ib.vercel.app/
 - **GitHub repository:** https://github.com/IbrahimShba/stayfit
 
-**Course:** CSCI426 Advanced Web Programming, Section C, Fall 2026
-**Project:** Phase 1 (theme: HealthTrack, a fitness and wellness tracking website)
-**Author:** Ibrahim Shbaklo (University ID: 12231733)
+**Built for:** CSCI426 Advanced Web Programming, Section C, Fall 2026 (Project Phase 1, theme: HealthTrack, a fitness and wellness tracking website)
 **Group statement:** I worked alone on this project. All the work was done by me.
 
 ---
@@ -127,3 +125,9 @@ The project was built step by step with Git. The commit history on GitHub shows 
 - React, React Router, Bootstrap and Recharts are open-source libraries (links above).
 - Font: Nunito from Google Fonts.
 - All the code, design and text of StayFit were written by Ibrahim Shbaklo.
+
+---
+
+## Author
+
+**Ibrahim Shbaklo** — CSCI426 Advanced Web Programming
