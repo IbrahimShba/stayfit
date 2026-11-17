@@ -116,7 +116,7 @@ stayfit/
 ![Contact page](screenshots/contact.png)
 
 ### Mobile view
-![Mobile view](screenshots/mobile.png)
+<img src="screenshots/mobile.png" alt="Mobile view" width="250">
 
 ## Version Control
 
