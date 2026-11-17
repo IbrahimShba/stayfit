@@ -23,9 +23,11 @@ function About() {
           <li>Git, GitHub and Vercel</li>
         </ul>
 
-        {/* Who made the app */}
-        <div className="card stat-card p-3 mt-4 text-center">
-          <div className="icon">👨‍💻</div>
+      </div>
+
+      {/* Who made the app: its own full-width block, so the card sits in the center */}
+      <div className="col-12">
+        <div className="card stat-card p-4 mt-4 mx-auto text-center" style={{ maxWidth: "600px" }}>
           <h2 className="h5 mb-1">Created by Ibrahim Shbaklo</h2>
           <p className="mb-0">Built solo as a project for CSCI426 Advanced Web Programming.</p>
         </div>
